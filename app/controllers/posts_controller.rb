@@ -4,8 +4,9 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    #@posts = Post.all
-    render "/posts/welcome"
+    @posts = Post.all
+    #render :text => "Welcome!!"
+    
   end
 
   # GET /posts/1
